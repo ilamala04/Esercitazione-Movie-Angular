@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices"],
+  "reviewers": ["@alessandrograndi"],
+  "gitlabci": {
+    "automerge": true
+  },
+  "pre-commit": {
+    "enabled": true,
+    "automerge": true
+  },
+  "pip_requirements": {
+    "managerFilePatterns": ["requirements.txt$/"]
+  },
+  "packageRules": [
+    {
+      "groupName": "Pre-commit",
+      "matchFileNames": [".pre-commit-config.yaml"],
+      "schedule": ["on the first day of the month"]
+    }
+  ]
+}

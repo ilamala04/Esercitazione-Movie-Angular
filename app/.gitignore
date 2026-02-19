@@ -1,0 +1,46 @@
+.idea
+.vscode
+*.log
+*.log.*
+.py[oc]
+__pycache__/
+
+# configurations
+*.env
+!template*.env
+*.ini
+!template*.ini
+*.toml
+!pyproject.toml
+!ruff.toml
+!template*.toml
+data.csv
+
+# Certificates and Keys
+*.crt
+*.key
+*.pem
+
+# unittest and cobertura
+.coverage
+coverage.xml
+report.xml
+
+# docker and compose
+compose*.y*ml
+docker-compose*.y*ml
+
+db.sqlite3
+
+# environments
+Pipfile.lock
+Pipfile
+.venv
+venv
+
+# fixture
+app/default_data.json
+app/horizon_default_data.json
+
+# prettier node_modules
+node_modules

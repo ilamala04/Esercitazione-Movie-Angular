@@ -1,0 +1,20 @@
+fix=true
+
+[lint]
+select = [
+    "B",  # flake8-bugbear
+    "DJ", # flake8-django
+    "E",  # pycodestyle errors
+    "F",  # pyflakes
+    "FURB", # refurb
+    "I",  # Isort
+    "Q",  # flake8-quotes
+    "PL", # pylint
+    "SIM",# flake8-simplify
+    "UP", # pyupgrade
+    "W",  # pycodestyle warnings
+]
+
+[lint.isort]
+known-first-party = ["pytech"]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
