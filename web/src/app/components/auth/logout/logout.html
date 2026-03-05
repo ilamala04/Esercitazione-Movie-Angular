@@ -1,0 +1,56 @@
+<!-- Button trigger modal -->
+<button
+ type="button"
+ class="btn nav-link"
+ data-bs-toggle="modal"
+ data-bs-target="#logoutModal"
+ aria-label="Logout"
+ title="Logout"
+>
+ <span class="fa-solid fa-right-from-bracket fs-4"></span>
+</button>
+<!-- Modal -->
+<div
+ class="modal fade"
+ id="logoutModal"
+ tabindex="-1"
+ aria-labelledby="logoutModalLabel"
+ aria-hidden="true"
+ data-bs-theme="dark"
+>
+ <div class="modal-dialog">
+ <div class="modal-content">
+ <div class="modal-header">
+ <h1
+ class="modal-title fs-5 text-white"
+ id="logoutModalLabel">
+ Logout
+ </h1>
+ <button
+ type="button"
+ class="btn-close"
+ data-bs-dismiss="modal"
+ aria-label="Close"
+ ></button>
+ </div>
+ <div class="modal-body text-white">
+ Are you sure you want to log out?
+ </div>
+ <div class="modal-footer">
+ <button
+ type="button"
+ class="btn btn-secondary"
+ data-bs-dismiss="modal">
+ Close
+ </button>
+ <button
+ type="button"
+ class="btn btn-danger"
+ data-bs-dismiss="modal"
+ (click)="onLogout()">
+ Logout
+ </button>
+ </div>
+ </div>
+ </div>
+</div>

@@ -1,0 +1,130 @@
+/* =========================
+   CONTAINER DELLE CARD
+========================= */
+
+.movie-container{
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(320px, 320px));
+
+  justify-content: center;
+
+  gap: 70px; 
+
+  margin-top: 30px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.movie-card {
+  width: 80%;
+  padding: 22px 24px;
+
+  background: #ffffff;
+  border-radius: 16px;
+
+  border: 1px solid #e8e8e8;
+  
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  transition: all 0.25s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+
+/* =========================
+   HEADER CARD
+========================= */
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+
+/* =========================
+   TITOLO FILM
+========================= */
+
+.movie-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+
+  word-break: break-word;
+}
+
+
+/* =========================
+   DESCRIZIONE FILM
+========================= */
+
+.movie-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+
+  word-break: break-word;
+}
+
+
+/* =========================
+   BOTTONE DELETE
+========================= */
+
+.delete-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #f4f4f4;
+  border: none;
+
+  padding: 6px 12px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #ffebeb;
+  color: #d63031;
+}
+
+.delete-btn .fa-trash {
+  font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+  .movies-container {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .movie-title {
+    font-size: 18px;
+  }
+
+  .movie-description {
+    font-size: 14px;
+  }
+
+}

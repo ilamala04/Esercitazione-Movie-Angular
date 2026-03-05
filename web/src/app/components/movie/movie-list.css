@@ -1,0 +1,121 @@
+/* =========================
+   CONTAINER PRINCIPALE
+========================= */
+
+#movies {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  margin-bottom: 2rem;
+
+  transition: transform 0.2s;
+}
+
+
+
+
+/* =========================
+   TITOLO
+========================= */
+
+#movies h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+#movies hr {
+  border-top: 2px solid #4caf50;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+
+/* =========================
+   CONTAINER FILM
+========================= */
+
+.movie-container {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+  gap: 20px;
+
+}
+
+
+/* =========================
+   COMPONENTE ANGULAR
+========================= */
+
+app-movie-item {
+  display: block;
+}
+
+
+/* =========================
+   NO MOVIES MESSAGE
+========================= */
+
+.movie-container p {
+  font-size: 1rem;
+  color: #777777;
+  font-style: italic;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  #movies {
+    padding: 1.5rem;
+  }
+
+  #movies h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+/* =========================
+   ADD MOVIE BUTTON
+========================= */
+
+.add-movie-btn {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  padding: 0.5rem 1.2rem;
+
+  background-color: #4caf50;
+
+  color: #ffffff;
+
+  font-weight: 500;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.add-movie-btn:hover {
+  background-color: #45a049;
+}
+
+app-movie-item{
+  display:block;
+}
+

@@ -1,0 +1,20 @@
+
+
+* {
+    color: #464c52;
+    box-sizing: border-box;
+   }
+   #headerBackground {
+    background: url('../assets/img/netflix-background.jpg') center;
+    background-size: cover;
+    opacity: 0.9;
+    margin: 0;
+    height: 35vh;
+    width: 100%;
+    }
+    .navbar {
+        min-height: 4rem;
+       }
+       nav .logo-font {
+        font-size: 1.3rem;
+       } 

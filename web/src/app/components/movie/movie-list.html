@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-12">
+    <div id="movies" class="shadow p-4 rounded">
+
+      <h2 class="fw-bold">Film</h2>
+      <hr />
+
+      <div class="movie-container">
+
+        @for(movie of movieList(); track $index){
+          <app-movie-item
+            [movie]="movie"
+            (deleteMovieEvent)="onDeleteMovie(movie.id)">
+          </app-movie-item>
+        } @empty {
+          <p>No movies found</p>
+        }
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<app-movie-modal 
+  [channelList]="channelList()" 
+  (addMovieEvent)="onAddMovie($event)">
+</app-movie-modal>

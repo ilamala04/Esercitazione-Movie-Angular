@@ -1,0 +1,15 @@
+<div class="movie-card">
+
+  <div class="movie-header">
+    <h3 class="movie-title">{{ movie().title }}</h3>
+
+    <button (click)="deleteMovie()" class="delete-btn">
+      delete
+    </button>
+  </div>
+
+  <p class="movie-description">
+    {{ movie().description }}
+  </p>
+
+</div>
